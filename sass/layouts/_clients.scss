@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.clients-tittle {
+.clients__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -17,7 +17,7 @@
   gap: 30px;
 }
 
-.clients-link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,6 @@
   }
 }
 
-.client-icon {
+.clients-list__icon {
   fill: currentColor;
 }
