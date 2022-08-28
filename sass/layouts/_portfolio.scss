@@ -1,3 +1,13 @@
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-btn {
   padding: 6px 22px;
 
@@ -24,29 +34,37 @@
   }
 }
 
-.btn-list {
+.card-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
-.btn-item:not(:last-child) {
-  margin-right: 8px;
+.product-card {
+  display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.portfolio-card {
-  padding: 20px 24px;
-  border-left: 1px solid var(--portfolio-border-color);
-  border-right: 1px solid var(--portfolio-border-color);
-  border-bottom: 1px solid var(--portfolio-border-color);
+.product-card:hover .product-card__text-overlay,
+.product-card:focus .product-card__text-overlay {
+  transform: translate(0%, 0%);
 }
 
-.potfolio-overlay {
+.product-card__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.text-overlay {
+.product-card__text-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -66,26 +84,16 @@
   transform: translate(0%, 110%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .portfolio-link:hover &,
-  .portfolio-link:focus & {
-    transform: translate(0%, 0%);
-  }
 }
 
-.portfolio-link {
-  display: block;
-
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
+.product-card__infobox {
+  padding: 20px 24px;
+  border-left: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
 }
 
-.portfolio-title {
+.product-card__name {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -98,16 +106,9 @@
   font-style: normal;
 }
 
-.portfolio-descr {
+.product-card__descr {
   font-size: 16px;
   line-height: 1.88;
 
   color: var(--main-text-color);
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
 }

@@ -8,11 +8,11 @@
   align-items: baseline;
 }
 
-.footer span {
+.logo__span {
   color: var(--accent-color);
 }
 
-.adress-soc-box {
+.footer__soc-box {
   display: flex;
   align-items: baseline;
 }
@@ -217,7 +217,7 @@
 }
 
 .form__btn-text {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
