@@ -44,9 +44,7 @@
 .modal__btn {
   position: absolute;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-justify-center;
 
   right: 8px;
   top: 8px;
@@ -73,12 +71,8 @@
 }
 
 .modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
-
   margin-bottom: 12px;
 }
 
@@ -95,10 +89,7 @@
   margin-bottom: 4px;
 
   color: var(--main-text-color);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font(400, 12px, 1.17, 0.01em);
 }
 
 .modal__input-wrap {
@@ -151,31 +142,23 @@
     outline-color: var(--accent-color);
   }
   &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(400, 12px, 1.17, 0.01em);
     color: var(--placeholder-color);
   }
 }
 
 .modal__checkbox-field {
-  display: flex;
-  justify-content: center;
+  @extend %justify-center;
 }
 
 .modal__label-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
 
   color: var(--main-text-color);
 }
 
 .modal__check-text {
-  display: flex;
-  align-items: center;
+  @extend %align-center;
 }
 
 .modal__check-icon {
@@ -186,9 +169,7 @@
 
   margin-right: 8px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-justify-center;
 
   transition: background-color, border;
   transition-duration: 250ms;
@@ -211,10 +192,7 @@
 .modal__input-link {
   font-family: 'Roboto' sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   text-decoration-line: underline;
 
   margin-left: 5px;

@@ -2,10 +2,12 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/placeholders';
 
 @import './components/button';
 @import './components/container';
 @import './components/modal';
+@import './components/logo';
 
 @import './layouts/header';
 @import './layouts/hero';

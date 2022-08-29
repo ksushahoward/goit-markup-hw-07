@@ -3,16 +3,13 @@
 }
 
 .team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 1.17, null);
   text-align: center;
   margin-bottom: 50px;
 }
 
 .team-list {
-  display: flex;
-  justify-content: center;
+  @extend %justify-center;
   column-gap: 30px;
 }
 
@@ -25,9 +22,7 @@
 }
 
 .team-list__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(500, 16px, 1.19, null);
   text-align: center;
   margin-bottom: 10px;
 }
@@ -46,8 +41,7 @@
 }
 
 .soc-list {
-  display: flex;
-  justify-content: center;
+  @extend %justify-center;
   gap: 10px;
 }
 
@@ -55,9 +49,7 @@
   width: 44px;
   height: 44px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-justify-center;
 
   border-radius: 50%;
   color: var(--icon-color);

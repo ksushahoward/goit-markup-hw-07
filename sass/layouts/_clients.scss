@@ -5,10 +5,7 @@
 
 .clients__title {
   margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  @include font(700, 36px, 1.17, null);
   text-align: center;
 }
 
@@ -18,9 +15,7 @@
 }
 
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-justify-center;
   box-sizing: border-box;
   display: flex;
 
