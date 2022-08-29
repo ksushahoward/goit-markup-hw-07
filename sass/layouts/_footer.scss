@@ -185,35 +185,22 @@
   }
 }
 
-.button {
+.button__footer {
   padding: 10px 32px;
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: var(--hero-title-color);
-  background-color: var(--accent-color);
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--hero-btn-hover);
-  }
-}
-
-.form__button {
   width: 200px;
   height: 50px;
   margin-left: 12px;
 
+  color: var(--hero-title-color);
+  background-color: var(--accent-color);
+
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-hover);
+  }
 }
 
 .form__btn-text {

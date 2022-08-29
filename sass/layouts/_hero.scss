@@ -30,21 +30,11 @@
   color: var(--hero-title-color);
 }
 
-.button {
+.button__hero {
   padding: 10px 32px;
-
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
   color: var(--hero-title-color);
   background-color: var(--accent-color);
 
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--hero-btn-hover);
