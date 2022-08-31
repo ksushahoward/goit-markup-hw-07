@@ -67,10 +67,6 @@ body {
   padding-bottom: 94px;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 .border {
   border-bottom: 1px solid var(--header-border-color);
 }
@@ -397,6 +393,10 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation__link:hover, .navigation__link:focus {
+  color: var(--accent-color);
+}
+
+.current {
   color: var(--accent-color);
 }
 
@@ -752,7 +752,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-color);
+  color: var(--footer-icon-color);
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
